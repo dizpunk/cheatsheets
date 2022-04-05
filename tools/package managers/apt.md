@@ -1,56 +1,56 @@
 # [APT](https://en.wikipedia.org/wiki/APT_(software))
 
-__Install__ a package:
+__Install__ a package
 ```
 apt install <PACKAGE>
 ```
 
-__Uninstall__ a package:
+__Uninstall__ a package
 ```
 apt remove <PACKAGE>
 ```
 
-__Uninstall__ a package and delete configuration files:
+__Uninstall__ a package and delete configuration files
 ```
 apt purge <PACKAGE>
 ```
 
-__List__ available packages:
+__List__ available packages
 ```
 apt list [--installed | --upgradeable]
 ```
 
-__Search__ for a package:
+__Search__ for a package
 ```
 apt search <PACKAGE>
 ```
 
-__Provide__ information about a package:
+__Provide__ information about a package
 ```
 apt show <PACKAGE>
 ```
 
-__Remove__ installed __dependencies__ that are no longer required:
+__Remove__ installed __dependencies__ that are no longer required
 ```
 apt autoremove
 ```
 
-__Check__ for __updates__ information from all configured sources:
+__Check__ for __updates__ information from all configured sources
 ```
 apt update
 ```
 
-Install available __upgrades__:
+Install available __upgrades__
 ```
 apt upgrade
 ```
 
-Install available __upgrades__ and remove obsolete packages:
+Install available __upgrades__ and remove obsolete packages
 ```
 apt full-upgrade
 ```
 
-__Edit__ your __sources.list__ file:
+__Edit__ your __sources.list__ file
 ```
 apt edit-sources
 ```

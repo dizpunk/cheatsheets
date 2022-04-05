@@ -1,63 +1,63 @@
 # [DNF](https://dnf.readthedocs.io/en/latest)
 
-__Install__ a package:
+__Install__ a package
 ```
 dnf install <PACKAGE>
 ```
 
-__Reinstall__ a package:
+__Reinstall__ a package
 ```
 dnf reinstall <PACKAGE>
 ```
 
-__Revert__ a package to the previous version:
+__Revert__ a package to the previous version
 ```
 dnf downgrade <PACKAGE>
 ```
 
-__Uninstall__ a package:
+__Uninstall__ a package
 ```
 dnf remove <PACKAGE>
 ```
 
-__Remove__ installed __dependencies__ that are no longer required:
+__Remove__ installed __dependencies__ that are no longer required
 ```
 dnf autoremove
 ```
 
-__Search__ for a package:
+__Search__ for a package
 ```
 dnf search <PACKAGE>
 ```
 
-__Provide__ information about a package:
+__Provide__ information about a package
 ```
 dnf info <PACKAGE>
 ```
 
-__Check__ for __updates__ without installing the packages:
+__Check__ for __updates__ without installing the packages
 ```
 dnf check-update
 ```
 
-Check and perform __updates__:
+Check and perform __updates__
 ```
 dnf upgrade
 ```
 
 ## Group command
 
-List available groups:
+List available groups
 ```
 dnf group list
 ```
 
-Install a group:
+Install a group
 ```
 dnf group install "<GROUP_NAME>"
 ```
 
-Remove a group:
+Remove a group
 ```
 dnf group remove "<GROUP_NAME>"
 ``` 

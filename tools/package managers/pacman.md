@@ -1,53 +1,53 @@
 # [PACMAN](https://wiki.archlinux.org/title/pacman)
 
-__Install__ a package or group:
+__Install__ a package or group
 ```
 pacman -S <PACKAGE | PACKAGE_GROUP>
 ```
 
-__Install__ a local package:
+__Install__ a local package
 ```
 pacman -U <PACKAGE>
 ```
 
-__Uninstall__ a package:
+__Uninstall__ a package
 ```
 pacman -R <PACKAGE>
 ```
 
-__Uninstall__ a package and its dependencies:
+__Uninstall__ a package and its dependencies
 ```
 pacman -Rs <PACKAGE>
 ```
 
 Pacman queries the local package database with the `-Q` flag, the sync database with the `-S` flag and the files database with the `-F` flag. `-s` is the builtin ERE flag.
 
-__List__ installed packages:
+__List__ installed packages
 ```
 pacman -Q
 ```
 
-__Search__ for a package:
+__Search__ for a package
 ```
 pacman -Ss <PACKAGE>
 ```
 
-__Search__ for already installed packages:
+__Search__ for already installed packages
 ```
 pacman -Qs <PACKAGE>
 ```
 
-__Provide__ information about a package:
+__Provide__ information about a package
 ```
 pacman -Si <PACKAGE>
 ```
 
-__Remove__ all files from cache:
+__Remove__ all files from cache
 ```
 pacman -Scc
 ```
 
-__Synchronize__ the repository databases and __update__ the system's packages (excluding local packages):
+__Synchronize__ the repository databases and __update__ the system's packages (excluding local packages)
 ```
 pacman -Syu
 ```

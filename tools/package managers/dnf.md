@@ -44,7 +44,7 @@ Check and perform __updates__
 ```
 dnf upgrade
 ```
-
+---
 ## Group command
 
 List available groups
@@ -60,11 +60,11 @@ dnf group install "<GROUP_NAME>"
 Remove a group
 ```
 dnf group remove "<GROUP_NAME>"
-``` 
-
+```
+---
 ## Configuration file
 __DNF__ by default uses the global configuration file at __/etc/dnf/dnf.conf__ and all *.repo files found under __/etc/yum.repos.d__. The latter is typically used for repository configuration and takes precedence over global configuration.
 
-The configuration file has INI format consisting of section declaration and __name=value__ options below each on separate line. There are two types of sections in the configuration files: __main__ and __repository__. 
+The configuration file has INI format consisting of section declaration and __name=value__ options below each on separate line. There are two types of sections in the configuration files: __main__ and __repository__.
 
 Main section defines all global configuration options. The repository sections define the configuration for each (remote or local) repository. The section name of the repository in brackets serve as repo ID reference and should be unique across configuration files. The minimal repository configuration file should aside from repo ID consists of baseurl, metalink or mirrorlist option definition.

@@ -1,5 +1,5 @@
 # [CAT](https://man7.org/linux/man-pages/man1/cat.1.html)
-The cat utility reads files sequentially, writing them to the standard output.
+The cat utility reads files sequentially, writing them to the standard output
 
 __Write__ file to standard output
 ```

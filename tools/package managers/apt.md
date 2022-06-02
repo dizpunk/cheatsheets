@@ -55,6 +55,7 @@ __Edit__ your __sources.list__ file
 apt edit-sources
 ```
 
+---
 ## Configuration file
 The source list __/etc/apt/sources.list__ and the files contained in __/etc/apt/sources.list.d/__
 are designed to support any number of active sources and a variety of source media. The

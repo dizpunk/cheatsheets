@@ -1,5 +1,5 @@
-# [TAR](https://man7.org/linux/man-pages/man1/tar.1.html) 
-The tar command creates and manipulates streaming archive files.
+# [TAR](https://man7.org/linux/man-pages/man1/tar.1.html)
+The tar command creates and manipulates streaming archive files
 
 __Create__ an uncompressed tar archive
 ```
@@ -9,13 +9,13 @@ tar cvf <ARCHIVE.tar> <DIRECTORY>
 - `v` - Verbosely list files
 - `f` - Follow archive file name
 
-__Create__ a tar gzipped archive 
+__Create__ a tar gzipped archive
 ```
 tar cvfz <ARCHIVE.tar.gz> <DIRECTORY>
 ```
 - `z` - Filter the archive through gzip
 
-__Create__ a bzipped (bzip2) tar archive 
+__Create__ a bzipped (bzip2) tar archive
 ```
 tar cvfj <ARCHIVE.tar.bz2> <DIRECTORY>
 ```

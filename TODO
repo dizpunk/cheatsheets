@@ -11,3 +11,7 @@ Tools:
 - grep
 - less
 - most
+
+Fixes:
+- Remove / fix <ITEM> syntax
+- Add a description to packege managers cheatsheets

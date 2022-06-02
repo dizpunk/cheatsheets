@@ -51,7 +51,7 @@ __Synchronize__ the repository databases and __update__ the system's packages (e
 ```
 pacman -Syu
 ```
-
+---
 ## Configuration file
 Pacman's settings are located in __/etc/pacman.conf__: this is the place where the user configures the program to work in the desired manner.
 

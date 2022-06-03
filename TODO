@@ -9,8 +9,6 @@ Tools:
 - rar
 - find
 - grep
-- less
-- most
 
 Fixes:
 - Remove / fix <ITEM> syntax

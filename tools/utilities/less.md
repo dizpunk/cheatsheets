@@ -18,14 +18,13 @@ ps aux | less
 
 ---
 ## Keyboard Navigation
-
-- `Up / down arrow keys and k / j` - Move up / down one line.
-- `right - left arrow key` - Scroll horizontally
+- `b` - Move up one page
 - `spacebar` - Move down one page
-- `b` - Move up one page.
-- `g / G` - Go to the first / last line.
+- `g` - Go to first line
+- `G` - Go to last line
 - `Ng` - Go to the Nth line
+- `n` - When searching, go to the next occurrence
+- `N` - When searching, go to the previous occurrence
 - `/search` - Search forward from the current position for the "search"
 - `?search` - Search backward from the current position for the "search"
-- `n / N` - When searching, go to the next / previous occurrence
 - `q` - Quit less

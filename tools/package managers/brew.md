@@ -2,17 +2,17 @@
 
 __Install__ a formula
 ```
-brew install <FORMULA>
+brew install FORMULA
 ```
 
 __Reinstall__ a formula or cask
 ```
-brew reinstall <FORMULA>
+brew reinstall FORMULA
 ```
 
 __Uninstall__ a formula
 ```
-brew uninstall <FORMULA>
+brew uninstall FORMULA
 ```
 
 __List__ installed formulae and casks
@@ -32,7 +32,7 @@ brew info [FORMULA]
 
 __Search__ for a formula (with a name or a /regex/)
 ```
-brew search <FORMULA | /FORMULA/>
+brew search FORMULA | /FORMULA/
 ```
 
 __Uninstall__ no longer needed __dependencies__
@@ -57,12 +57,12 @@ brew shellenv
 
 __Pin__ the specified formula, preventing it from being upgraded
 ```
-brew pin <FORMULA>
+brew pin FORMULA
 ```
 
 __Unpin__ formula, allowing it to be upgraded
 ```
-brew unpin <FORMULA>
+brew unpin FORMULA
 ```
 
 __Fetch__ the newest version of Homebrew and all formulae from GitHub

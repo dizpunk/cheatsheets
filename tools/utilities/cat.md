@@ -3,20 +3,20 @@ The cat utility reads files sequentially, writing them to the standard output
 
 __Write__ file to standard output
 ```
-cat <FILE>
+cat FILE
 ```
 
 __Concatenate__ files
 ```
-cat <FILE1> <FILE2> > <FILE3>
+cat FILE1 FILE2 > FILE3
 ```
 
 __Number__ the output lines
 ```
-cat -n <FILE>
+cat -n FILE
 ```
 
 __Display__ non-printing characters and EOF
 ```
-cat -e <FILE>
+cat -e FILE
 ```

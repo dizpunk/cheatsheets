@@ -2,17 +2,17 @@
 
 __Install__ a package
 ```
-apt install <PACKAGE>
+apt install PACKAGE
 ```
 
 __Uninstall__ a package
 ```
-apt remove <PACKAGE>
+apt remove PACKAGE
 ```
 
 __Uninstall__ a package and delete configuration files
 ```
-apt purge <PACKAGE>
+apt purge PACKAGE
 ```
 
 __List__ available packages
@@ -22,12 +22,12 @@ apt list [--installed | --upgradeable]
 
 __Search__ for a package
 ```
-apt search <PACKAGE>
+apt search PACKAGE
 ```
 
 __Provide__ information about a package
 ```
-apt show <PACKAGE>
+apt show PACKAGE
 ```
 
 __Remove__ installed __dependencies__ that are no longer required

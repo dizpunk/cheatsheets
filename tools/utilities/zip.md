@@ -3,21 +3,21 @@ The zip / unzip commands package, compress and decompress archive files
 
 __Create__ an archive
 ```
-zip -r <ARCHIVE> <FOLDER | FILE>
+zip -r ARCHIVE FOLDER | FILE
 ```
 - `r` - Travel the directory structure recursively
 
 __Delete__ entries from a zip archive
 ```
-zip -d <ARCHIVE> <TO_DELETE>
+zip -d ARCHIVE TO_DELETE
 ```
 
 __List__ files in an archive
 ```
-unzip -l <ARCHIVE>
+unzip -l ARCHIVE
 ```
 
 __Extract__ a zip archive
 ```
-unzip <ARCHIVE>
+unzip ARCHIVE
 ```

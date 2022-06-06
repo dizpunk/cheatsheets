@@ -3,7 +3,7 @@
 
 __Open__ a file
 ```
-less [OPTIONS] filename
+less [OPTIONS] FILENAME
 ```
 
 - `E` - Exit when EOF

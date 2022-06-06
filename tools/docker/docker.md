@@ -2,44 +2,44 @@
 ## How to manage containers
 __Start__ a container
 ```
-docker run <IMAGE>[:TAG]
+docker run IMAGE[:TAG]
 ```
 
 Start a container in __detached mode__
 ```
-docker run -d <IMAGE>[:TAG]
+docker run -d IMAGE[:TAG]
 ```
 
 Start a container in __interactive mode__
 ```
-docker run -i <IMAGE>[:TAG]
+docker run -i IMAGE[:TAG]
 ```
 
 Start a container in __interactive mode__ with a __pseudo-tty__
 ```
-docker run -it <IMAGE>[:TAG]
+docker run -it IMAGE[:TAG]
 ```
 
 Start a container with an __environmental variable__
 ```
-docker run -e VARIABLE=VALUE <IMAGE>[:TAG]
+docker run -e VARIABLE=VALUE IMAGE[:TAG]
 ```
 
 __Attach__ to a running container
 ```
-docker attach <ID>
-docker attach <NAME>
+docker attach ID
+docker attach NAME
 ```
 
 __Append__ a command to a container
 ```
-docker run ubuntu COMMAND
+docker run CONTAINER COMMAND
 ```
 
 __Execute a command__ in a container
 ```
-docker exec <ID> COMMAND
-docker exec <NAME> COMMAND
+docker exec ID COMMAND
+docker exec NAME COMMAND
 ```
 
 __List__ containers
@@ -51,41 +51,41 @@ docker container ls
 
 __Inspect__ a container
 ```
-docker inspect <ID>
-docker inspect <NAME>
+docker inspect ID
+docker inspect NAME
 ```
 
 Inspect __container's logs__
 ```
-docker logs <ID>
-docker logs <NAME>
+docker logs ID
+docker logs NAME
 ```
 
 __Stop__ a container
 ```
-docker stop <ID>
-docker stop <NAME>
+docker stop ID
+docker stop NAME
 ```
 
 __Remove__ a container
 ```
-docker rm <ID>
-docker rm <NAME>
+docker rm ID
+docker rm NAME
 ```
 
 ---
 ## How to manage images
 __Build__ an image from a Dockerfile
 ```
-docker build -f <DOCKERFILE>
-docker build [OPTIONS] <URL>
-docker build [OPTIONS] <PATH>
-docker build <PATH_TO_DOCKERFILE> (file must be called "Dockerfile")
+docker build -f DOCKERFILE
+docker build [OPTIONS] URL
+docker build [OPTIONS] PATH
+docker build PATH_TO_DOCKERFILE (file must be called "Dockerfile")
 ```
 
 __Build and tag__ an image from a Dockerfile
 ```
-docker build -t REPOSITORY/<IMAGE>[:TAG] <DOCKERFILE>
+docker build -t REPOSITORY/IMAGE[:TAG] DOCKERFILE
 ```
 
 __List__ images
@@ -96,39 +96,39 @@ docker image ls
 
 __Tag__ a new image
 ```
-docker tag <ID> REPOSITORY/IMAGE/<TAG>
-docker tag <IMAGE> REPOSITORY/IMAGE/<TAG>
-docker tag <IMAGE>[:TAG] REPOSITORY/IMAGE/<TAG>
-docker tag <SOURCE_IMAGE>[:TAG] TARGET_IMAGE<:TAG>
+docker tag ID REPOSITORY/IMAGE/TAG
+docker tag IMAGE REPOSITORY/IMAGE/TAG
+docker tag IMAGE[:TAG] REPOSITORY/IMAGE/TAG
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE<:TAG>
 ```
 
 __Push__ an image to a registry (e.g. DockerHub)
 ```
-docker push ACCOUNT/<IMAGE>[:TAG]
-docker push REGISTRY:PORT/LOCATION/<IMAGE>[:TAG]
+docker push ACCOUNT/IMAGE[:TAG]
+docker push REGISTRY:PORT/LOCATION/IMAGE[:TAG]
 ```
 
 __Pull__ down an image
 ```
-docker pull <IMAGE>[:TAG]
-docker pull REGISTRY:PORT/LOCATION/<IMAGE>[:TAG]
+docker pull IMAGE[:TAG]
+docker pull REGISTRY:PORT/LOCATION/IMAGE[:TAG]
 ```
 
 __Remove__ an image
 ```
-docker rmi <NAME>[:TAG]
+docker rmi NAME[:TAG]
 ```
 
 ---
 ## Network configuration
 Running an __isolated container__
 ```
-docker run <IMAGE> --network=none
+docker run IMAGE --network=none
 ```
 
 Running a container associated with __Docker-host network__
 ```
-docker run <IMAGE> --network=host
+docker run IMAGE --network=host
 ```
 
 __Create__ a new __network__
@@ -155,31 +155,31 @@ docker network ls
 
 __Inspect__ a network
 ```
-docker network inspect <NETWORK>
+docker network inspect NETWORK
 ```
 
 __Remove__ a network
 ```
-docker network rm <NETWORK>
+docker network rm NETWORK
 ```
 
 __PORT mapping__
 ```
-docker run -p DOCKER_PORT:CONTAINER_PORT <IMAGE>[:TAG]
-docker run -p DOCKER_PORT/PROTOCOL:CONTAINER_PORT/PROTOCOL <IMAGE>[:TAG]
-docker run -p DOCKER_IP:DOCKER_PORT/PROTOCOL:CONTAINER_PORT/PROTOCOL <IMAGE>[:TAG]
+docker run -p DOCKER_PORT:CONTAINER_PORT IMAGE[:TAG]
+docker run -p DOCKER_PORT/PROTOCOL:CONTAINER_PORT/PROTOCOL IMAGE[:TAG]
+docker run -p DOCKER_IP:DOCKER_PORT/PROTOCOL:CONTAINER_PORT/PROTOCOL IMAGE[:TAG]
 ```
 
 ---
 ## Storage configuration
 __Create__ a volume
 ```
-docker volume create <NAME>
+docker volume create NAME
 ```
 
 __Remove__ a volume
 ```
-docker volume rm <NAME>
+docker volume rm NAME
 ```
 
 __List__ volumes
@@ -189,13 +189,13 @@ docker volume ls
 
 __Inspect__ a volume
 ```
-docker volume inspect <NAME>
+docker volume inspect NAME
 ```
 
 __Volume mapping__
 ```
-docker run -v VOLUME:MOUNTPOINT:OPTIONS <IMAGE>[:TAG]
-docker run -v LOCAL_PATH:MOUNTPOINT:OPTIONS <IMAGE>[:TAG]
+docker run -v VOLUME:MOUNTPOINT:OPTIONS IMAGE[:TAG]
+docker run -v LOCAL_PATH:MOUNTPOINT:OPTIONS IMAGE[:TAG]
 ```
 
 ---
@@ -208,7 +208,7 @@ INSTRUCTION arguments
 
 The __FROM__ instruction initializes a new build stage and sets the base image.
 ```
-FROM [--platform=<platform>] <image>[:<tag>] [AS <name>]
+FROM [--platform=<platform>] image[:<tag>] [AS <name>]
 ```
 
 The __RUN__ instruction will execute any commands in a new layer on top of the current image ad commit the results.
@@ -299,7 +299,7 @@ ONBUILD <INSTRUCTION>
 
 The __STOPSIGNAL__ instruction sets the system call signal that will be sent to the container to exit.
 
-This signal can be a signal name in the format SIG<NAME>, for instance SIGKILL, or an unsigned number that matches a position in the kernel’s syscall table, for instance 9. The default is SIGTERM if not defined.
+This signal can be a signal name in the format SIGNAME, for instance SIGKILL, or an unsigned number that matches a position in the kernel’s syscall table, for instance 9. The default is SIGTERM if not defined.
 ```
 STOPSIGNAL signal
 ```

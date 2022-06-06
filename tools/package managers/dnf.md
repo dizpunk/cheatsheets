@@ -2,22 +2,22 @@
 
 __Install__ a package
 ```
-dnf install <PACKAGE>
+dnf install PACKAGE
 ```
 
 __Reinstall__ a package
 ```
-dnf reinstall <PACKAGE>
+dnf reinstall PACKAGE
 ```
 
 __Revert__ a package to the previous version
 ```
-dnf downgrade <PACKAGE>
+dnf downgrade PACKAGE
 ```
 
 __Uninstall__ a package
 ```
-dnf remove <PACKAGE>
+dnf remove PACKAGE
 ```
 
 __Remove__ installed __dependencies__ that are no longer required
@@ -27,12 +27,12 @@ dnf autoremove
 
 __Search__ for a package
 ```
-dnf search <PACKAGE>
+dnf search PACKAGE
 ```
 
 __Provide__ information about a package
 ```
-dnf info <PACKAGE>
+dnf info PACKAGE
 ```
 
 __Check__ for __updates__ without installing the packages
@@ -54,12 +54,12 @@ dnf group list
 
 Install a group
 ```
-dnf group install "<GROUP_NAME>"
+dnf group install "GROUP_NAME"
 ```
 
 Remove a group
 ```
-dnf group remove "<GROUP_NAME>"
+dnf group remove "GROUP_NAME"
 ```
 ---
 ## Configuration file

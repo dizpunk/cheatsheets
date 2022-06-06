@@ -3,7 +3,7 @@ The tar command creates and manipulates streaming archive files
 
 __Create__ an uncompressed tar archive
 ```
-tar cvf <ARCHIVE.tar> <DIRECTORY>
+tar cvf ARCHIVE.tar DIRECTORY
 ```
 - `c` - Create a new archive
 - `v` - Verbosely list files
@@ -11,13 +11,13 @@ tar cvf <ARCHIVE.tar> <DIRECTORY>
 
 __Create__ a tar gzipped archive
 ```
-tar cvfz <ARCHIVE.tar.gz> <DIRECTORY>
+tar cvfz ARCHIVE.tar.gz DIRECTORY
 ```
 - `z` - Filter the archive through gzip
 
 __Create__ a bzipped (bzip2) tar archive
 ```
-tar cvfj <ARCHIVE.tar.bz2> <DIRECTORY>
+tar cvfj ARCHIVE.tar.bz2 DIRECTORY
 ```
 - `j` - Filter the archive through bzip2
 
@@ -25,30 +25,30 @@ tar cvfj <ARCHIVE.tar.bz2> <DIRECTORY>
 
 __Extract__ a .tar archive
 ```
-tar xvf <ARCHIVE.tar>
+tar xvf ARCHIVE.tar
 ```
 - `x` - Extract files from archive
 
 __Extract__ a gzipped | bzipped tar archive
 ```
-tar xvfz <ARCHIVE.tar.gz>
-tar xvfj <ARCHIVE.tar.bz2>
+tar xvfz ARCHIVE.tar.gz
+tar xvfj ARCHIVE.tar.bz2
 ```
 
 __List__ the contents of an archive
 ```
-tar tvf <ARCHIVE.tar>
-tar tvfz <ARCHIVE.tar.gz>
-tar tvfj <ARCHIVE.tar.bz2>
+tar tvf ARCHIVE.tar
+tar tvfz ARCHIVE.tar.gz
+tar tvfj ARCHIVE.tar.bz2
 ```
 
 __Extract__ a single file or directory
 ```
-tar xvf <ARCHIVE.tar> <PATH>
+tar xvf ARCHIVE.tar <PATH>
 ```
 
 __Append__ a file or directory to an existing archive
 ```
-tar rvf <ARCHIVE.tar> <PATH>
+tar rvf ARCHIVE.tar <PATH>
 ```
 - `r` - Append files to the end of an archive

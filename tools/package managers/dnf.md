@@ -1,4 +1,5 @@
 # [DNF](https://dnf.readthedocs.io/en/latest)
+DNF or Dandified YUM is the next-generation version of the Yellowdog Updater, Modified (yum), a package manager for .rpm-based linux distributions
 
 __Install__ a package
 ```

@@ -1,4 +1,5 @@
 # [PACMAN](https://wiki.archlinux.org/title/pacman)
+Pacman is a simple library-based package manager which manages software packages on Arch-based linux distributions
 
 __Install__ a package or group
 ```

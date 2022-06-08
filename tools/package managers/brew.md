@@ -1,4 +1,5 @@
 # [BREW](https://brew.sh/)
+Homebrew is a free and open-source software package management system for macOS
 
 __Install__ a formula
 ```

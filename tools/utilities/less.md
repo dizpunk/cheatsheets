@@ -6,10 +6,10 @@ __Open__ a file
 less [OPTIONS] FILENAME
 ```
 
-- `E` - Exit when EOF
-- `N` - Display line numbers
-- `X` - Display output without clearing the screen on exit
-- `p` - Start at the first occurrence of "pattern" in the file
+- `-E` - Exit when EOF
+- `-N` - Display line numbers
+- `-X` - Display output without clearing the screen on exit
+- `-p` - Start at the first occurrence of "pattern" in the file
 
 __Redirect__ some output to less
 ```

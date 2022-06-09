@@ -6,7 +6,7 @@ __Open__ a file
 most [OPTIONS] filename
 ```
 
-- `b` - Display file in hexadecimal notation (16 bytes per line)
+- `-b` - Display file in hexadecimal notation (16 bytes per line)
 - `+line` - Start up at the specified "line"
 - `+/string` - Start at line containing first occurrence of "string"
 

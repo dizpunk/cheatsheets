@@ -1,5 +1,6 @@
 # [MOST](https://linux.die.net/man/1/most)
-`Most` is a paging program that displays, one windowful at a time, the contents of a file on a terminal
+`Most` is a paging program that displays, one windowful at a time, the contents of a file on a terminal.
+
 
 __Open__ a file
 ```

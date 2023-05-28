@@ -1,5 +1,5 @@
 # [FIND]()
-Search for files in a directory hierarchy
+Search for files in a directory hierarchy.
 
 ```
 find PATH [OPTIONS] COMMANDS

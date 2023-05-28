@@ -1,9 +1,9 @@
 # [EXA](https://the.exa.website/)
-Exa is an improved file lister with more features and better defaults than the standard `ls` command
+Exa is an improved file lister with more features and better defaults than the standard `ls` command.
 
 __List__
 ```
-exa [OPTIONS] FILES | DIRECTORIES
+exa [OPTIONS] FILES || DIRECTORIES
 ```
 
 ## DISPLAY OPTIONS

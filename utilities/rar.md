@@ -1,6 +1,8 @@
 # [RAR](https://manpages.ubuntu.com/manpages/focal/en/man1/rar.1.html)
-rar - Archive files with compression
-unrar - Extract files from rar archives
+`rar` - Archive files in rar format.
+<br>
+`unrar` - Extract files from rar archives.
+
 
 __Create__ an archive
 ```
@@ -14,6 +16,8 @@ rar COMMAND ARCHIVE
 - `l` - List content of archive
 - `d` - Delete files from archive
 - `e` - Extract files to current directory (no subdirectories)
+
+---
 
 __Extract__ an archive
 ```

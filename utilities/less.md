@@ -1,5 +1,6 @@
 # [LESS](https://man7.org/linux/man-pages/man1/less.1.html)
-`Less` is a command line utility that displays the contents of a file or a command output, one page at a time (both forward and backward)
+`Less` is a command line utility that displays the contents of a file or a command output, one page at a time (both forward and backward).
+
 
 __Open__ a file
 ```
@@ -17,6 +18,8 @@ ps aux | less
 ```
 
 ---
+
+
 ## Keyboard Navigation
 - `b` - Move up one page
 - `spacebar` - Move down one page

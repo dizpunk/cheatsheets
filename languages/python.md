@@ -199,6 +199,8 @@ Check for existence.
 10 in set  # => False
 ```
 
+<br>
+
 ## Operators
 
 __Mathematical__ operators are straightforward.
@@ -277,6 +279,8 @@ b is a            # => False
 b == a            # => True
 ```
 
+<br>
+
 ## Control Flow
 
 __if__ statement.
@@ -326,8 +330,6 @@ while x < 4:
     x += 1
 ```
 
-<br>
-
 __try/except__ blocks.
 ```
 try:
@@ -361,6 +363,8 @@ with open("file.txt") as file:
     for line in file:
         print(line)
 ```
+
+<br>
 
 ## Functions
 
@@ -433,8 +437,9 @@ set_global(20) # => 5
 
 __Lambdas__ (anonymous functions).
 ```
-(lambda x: x > 2)(3)                  # => True
-(lambda x, y: x ** 2 + y ** 2)(2, 1)  # => 5
+func = lambda a : a + 10
+
+func(5)   # => 15
 ```
 
 Return functions.
@@ -446,4 +451,42 @@ def parent_func(x):
 
 func = parent_func(10)
 func(3)   # => 13
+```
+
+<br>
+
+## Modules
+
+__Import__ modules.
+```
+import math
+
+math.pow(2, 3)  # => 8.0
+```
+
+Import __specific functions__ from a module.
+```
+from math import pow
+
+pow(2, 3)  # => 8.0
+```
+
+Import __all functions__ from a module (not recommended).
+```
+from math import *
+
+pow(2, 3)  # => 8.0
+```
+
+__Customize__ module names.
+```
+import math as m
+
+m.pow(2, 3)  # => 8.0
+```
+
+Find which functions and attributes are defined in a module.
+```
+import math
+dir(math)
 ```

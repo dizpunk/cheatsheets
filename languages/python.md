@@ -1,3 +1,8 @@
+# [Python Programming Language](https://www.python.org/)
+Simple but fairly comprehensive cheatsheet of all main python language features and syntax.
+
+<br>
+
 ## Comments
 
 ```
@@ -455,7 +460,59 @@ func(3)   # => 13
 
 <br>
 
+## Classes
+
+Define a __class__.
+```
+class Person:
+
+    # class variables shared by all instances
+    species = "H. sapiens"
+
+    # initializer method (when a class defines an __init__() method, class instantiation automatically invokes __init__() for the newly created class instance)
+    def __init__(self, name, surname, age):
+        # instance variables unique to each instance
+        self.age = age
+        self.name = name
+        self.surname = surname
+
+    # an instance method (all methods take "self" as the first argument)
+    def greet(self):
+        print(f"Hello, I am {self.name} {self.surname}.")
+```
+
+Define __inheritance__.
+```
+class Engineer(Person):
+
+    # child's __init__() function overrides the inheritance of the parent's __init__() function so it's necessary to add a call to the parent's __init__().
+
+    def __init__(self, name, surname, age, job, pay):
+
+        # call to parent initializer
+        Person.__init__(self, name, surname, age)
+        # or
+        super().__init__(name, surname, age)
+
+        self.job = job
+        self.pay = pay
+
+    def brag_about_job(self):
+        print(f"Currently working as a {self.job}")
+
+    def brag_about_pay(self):
+        print(f"I'm being paied around {self.pay} a year")
+```
+
+<br>
+
 ## Modules
+
+__\_\_name\_\___ checks makes sure the code is only executed when the module is the main program.
+```
+if __name__ == '__main__':
+    # execution
+```
 
 __Import__ modules.
 ```

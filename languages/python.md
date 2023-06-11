@@ -9,6 +9,8 @@
 """
 ```
 
+<br>
+
 ## Datatypes
 
 __Numbers__
@@ -36,12 +38,14 @@ __None__ (is an object)
 None
 ```
 
+<br>
+
 ## Data Structures
 
-__Lists__ - Holds an ordered collection of heterogeneous items
+__Lists__ - Hold an ordered and changeable collection of items. Lists allow duplicate values.
 ```
 list = []
-elist = ["A", 5, 6, True]
+list = ["A", 5, 6, True]
 ```
 
 Get length
@@ -94,4 +98,93 @@ del list[index]
 Remove first occurrence of a value
 ```
 list.remove(value)
+```
+
+<br>
+
+__Tuples__ -  Hold an ordered and immutable collection of items.
+```
+tuple = (1, 2, 3)
+tup[0]      # => 1
+tup[0] = 3  # Raises a TypeError
+```
+
+Most of the list operations are valid for tuples too
+
+<br>
+
+
+__Dictionaries__ - Store keys to values mappings. Dictionary items are ordered, changeable and does not allow duplicates.
+```
+dictionary = {}
+dictionary = {"one": 1, "two": 2, "three": 3}
+```
+
+Keys for dictionaries have to be immutable types.
+Immutable types include ints, floats, strings, tuples.
+
+Look up values using corresponding key
+```
+dictionary["one"]       # => 1
+dictionary.get("one")   # => 1
+```
+
+Get all keys / values
+```
+list(dictionary.keys())  # => ["one", "two", "three"]
+list(dictionary.values())  # => [1, 2, 3]
+```
+
+Check for existence of keys
+```
+"one" in dictionary  # => True
+1 in dictionary      # => False
+```
+
+Adding an element
+```
+dictionary["four"] = 4
+dictionary.update({"four":4})
+```
+
+Remove keys
+```
+del dictionary["one"]
+```
+
+<br>
+
+__Sets__ - Hold an unordered, unchangeable collection of items. Sets do not allow duplicate values.
+```
+set = set()
+set = {1, 2, 2, 3, 3, 4}  # some_set is now {1, 2, 3, 4}
+```
+
+Elements of a set have to be immutable.
+
+Add items
+```
+set.add(5)  # set is now {1, 2, 3, 4, 5}
+set.add(5)  # remains as before {1, 2, 3, 4, 5}
+```
+
+Intersection (__&__), union (__|__), difference (__-__), symmetric difference (__^__), superset
+```
+other_set = {3, 4, 5, 6}
+set & other_set  # => {3, 4, 5}
+
+filled_set | other_set  # => {1, 2, 3, 4, 5, 6}
+
+{1, 2, 3, 4} - {2, 3, 5}  # => {1, 4}
+
+{1, 2, 3, 4} ^ {2, 3, 5}  # => {1, 4, 5}
+
+{1, 2} >= {1, 2, 3} # => False
+{1, 2} <= {1, 2, 3} # => True
+```
+
+Check for existence
+```
+2 in set   # => True
+10 in set  # => False
 ```

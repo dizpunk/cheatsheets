@@ -361,3 +361,89 @@ with open("file.txt") as file:
     for line in file:
         print(line)
 ```
+
+## Functions
+
+Create a new __function__.
+```
+def add(x, y):
+    return x + y
+```
+
+Calling functions with __parameters__ or __keyword arguments__.
+```
+add(5, 7)      # =>  12
+add(y=7, x=5)  # =>  12
+```
+
+Define a function that take a variable number of __positional arguments__ (stored in a tuple).
+```
+def func(*args):
+    return args
+
+func(1, 2, 3)  # => (1, 2, 3)
+```
+
+You can define functions that take a variable number of __keyword arguments__ (stored in a dictionary).
+```
+def func(**kwargs):
+    return kwargs
+
+func(english="eng", italian="ita")  # => {"english": "eng", "italian": "ita"}
+```
+
+Both can be used at once.
+```
+def func(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+func(1, 2, a=3, b=4) # => (1, 2)
+                          {"a": 3, "b": 4}
+```
+
+It's possible to return multiple values (returned values are stored in a tuple).
+```
+def func(x, y):
+    return y, x
+
+func("a", "b") # => ('b', 'a')
+```
+
+Global and local __scope__.
+```
+x = 5
+
+def set_local(num):
+    # local scope
+    x = num
+    print(x)
+
+def set_global(num):
+    # global refers to global variable
+    global x
+    print(x)
+    x = num
+    print(x)
+
+set_local(10)  # => 10
+set_global(20) # => 5
+                    20
+```
+
+__Lambdas__ (anonymous functions).
+```
+(lambda x: x > 2)(3)                  # => True
+(lambda x, y: x ** 2 + y ** 2)(2, 1)  # => 5
+```
+
+Return functions.
+```
+def parent_func(x):
+    def child_func(y):
+        return x + y
+    return child_func
+
+func = parent_func(10)
+func(3)   # => 13
+```

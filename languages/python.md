@@ -276,3 +276,88 @@ b = [1, 2, 3, 4]
 b is a            # => False
 b == a            # => True
 ```
+
+## Control Flow
+
+__if__ statement.
+```
+if var > 10:
+
+    # do something
+
+elif var < 10:
+
+    # do something
+
+else:
+
+    # do something
+```
+
+__For__ loops.
+```
+# range(lower, upper, step), where upper bound is excluded
+for i in range(4):
+    print(i)
+
+for i in range(4, 8): #
+    print(i)
+
+for i in range(4, 8, 2):
+    print(i)
+
+
+# iterate over an iterable object (an iterable is an object that can be treated as a sequence).
+for animal in ["dog", "cat", "mouse"]:
+    print(f"{animal} is a mammal")
+
+animals = ["dog", "cat", "mouse"]
+for i, value in enumerate(animals):
+    print(i, value)
+```
+
+<br>
+
+__While__ loops.
+```
+x = 0
+while x < 4:
+    print(x)
+    x += 1
+```
+
+<br>
+
+__try/except__ blocks.
+```
+try:
+
+    # try something
+    raise IndexError("This is an index error")
+
+except IndexError as error:
+
+    # handle one or more exceptions
+    print(f"Oh no: {error}")
+
+except (TypeError, NameError):
+
+    pass
+
+else:
+
+    # run when no exceptions is raised in try
+    print("All good!")
+
+finally:
+
+    # always execute anyway
+    print("...anyway!")
+```
+
+__with__ statement.
+```
+with open("file.txt") as file:
+    for line in file:
+        print(line)
+```

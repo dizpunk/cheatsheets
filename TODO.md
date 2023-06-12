@@ -10,9 +10,7 @@ To ADD:
 - [ ] grep
 - [ ] nmap
 - [ ] sort
-- [ ] uniq
 - [ ] zeek
 - [ ] snort
-- [ ] python
 - [ ] markdown
 - [ ] javascript

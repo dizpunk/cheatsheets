@@ -1,6 +1,5 @@
 To ADD:
 - [ ] c
-- [ ] ls
 - [ ] nl
 - [ ] wc
 - [ ] cut

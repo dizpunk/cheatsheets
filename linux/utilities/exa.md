@@ -1,9 +1,11 @@
 # [EXA](https://the.exa.website/)
-Exa is an improved file lister with more features and better defaults than the standard `ls` command.
+__exa__ is an improved file lister with more features and better defaults than the standard `ls` command.
 
-__List__
+<br>
+
+__Usage__:
 ```
-exa [OPTIONS] FILES || DIRECTORIES
+exa [OPTIONS] [FILES] || [DIRECTORIES]
 ```
 
 ## DISPLAY OPTIONS

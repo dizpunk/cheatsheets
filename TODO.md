@@ -8,7 +8,6 @@ To ADD:
 - [ ] bash
 - [ ] grep
 - [ ] nmap
-- [ ] sort
 - [ ] zeek
 - [ ] snort
 - [ ] markdown

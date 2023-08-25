@@ -1,14 +1,20 @@
-To ADD:
+# TODO
+
+Utilities:
 - [ ] c
 - [ ] nl
 - [ ] wc
 - [ ] cut
 - [ ] awk
 - [ ] sed
-- [ ] bash
 - [ ] grep
+
+Tools:
 - [ ] nmap
 - [ ] zeek
 - [ ] snort
+
+Languages:
+- [ ] bash
 - [ ] markdown
 - [ ] javascript
